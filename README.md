@@ -23,4 +23,4 @@ Enable real-time customer consent synchronization between touchpoints and centra
 - Process Flow
 - API Mapping
 - Risk Analysis
-- Error Handling Requirements
+- UAT scenarios
