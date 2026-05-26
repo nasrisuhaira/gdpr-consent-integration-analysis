@@ -1,0 +1,19 @@
+In integration projects, user stories are usually divided based on:
+Interface/System
+Functional Capability
+API/Event Flow
+Error Handling
+Security
+Monitoring
+Reporting/Audit
+
+###Interface	Story Type	Purpose
+Frontend → SSO	Consent Capture	Capture customer consent
+SSO → OneTrust	Authentication + Consent Validation	Validate user/token
+OneTrust → IH	Consent Event Publishing	Publish consent updates
+IH → CDP	Customer Profile Sync	Update customer profile
+IH → SFMC	Marketing Consent Sync	Update subscriptions
+IH → SFSC	Service Consent Sync	Update service visibility
+IH → Regional Consent Service	Regional Rule Validation	Apply geography-specific rules
+Monitoring Layer	Logging/Alerts	Operational monitoring
+Audit Layer	Audit Storage	Compliance tracking
