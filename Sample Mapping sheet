@@ -1,0 +1,6 @@
+Source System	Source Field	Target System	Target Field	Transformation
+Frontend	customerId	OneTrust	customer_id	Direct Mapping
+Frontend	emailConsent	CDP	email_opt_in	Boolean Conversion
+Frontend	smsConsent	SFMC	sms_subscription	Boolean Conversion
+OneTrust	consentTimestamp	SFSC	consent_date	UTC Formatting
+SSO	region	Regional Service	country_region	Standardized Region Mapping
