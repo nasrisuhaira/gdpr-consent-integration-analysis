@@ -1,0 +1,22 @@
+## STORY 1 --OneTrust to IH
+Title - Publish Consent Update Event
+
+Description
+As an integration platform, I want consent changes published as events, So that downstream systems receive updates in real time.
+Acceptance Criteria
+Consent update event is triggered
+Event payload contains mandatory fields
+Duplicate events are prevented
+Retry mechanism exists
+Failed events move to DLQ
+
+## STORY 2 --IH to SFMC
+Title -Synchronize Marketing Consent Status
+
+Description
+As a marketing platform, I want latest consent status synced, So that only eligible customers receive communications.
+Acceptance Criteria
+Consent status updates successfully
+Opt-out customers are suppressed
+Sync occurs within SLA
+Error logs are maintained
