@@ -1,0 +1,34 @@
+Sample API Documentation
+Consent Update API
+Endpoint
+
+POST /api/v1/consent/update
+
+Description
+
+Updates customer consent preferences.
+
+Request Headers
+Header	Description
+Authorization	OAuth Bearer Token
+Content-Type	application/json
+Correlation-Id	Request trace ID
+Sample Request
+{
+  "customerId": "12345",
+  "emailConsent": true,
+  "smsConsent": false,
+  "region": "EU",
+  "consentTimestamp": "2026-05-26T10:00:00Z"
+}
+Sample Response
+
+  "status": "SUCCESS",
+  "message": "Consent Updated Successfully"
+}
+Error Codes
+Code	Meaning
+400	Invalid payload
+401	Unauthorized
+403	Consent validation failed
+500	Internal server error
