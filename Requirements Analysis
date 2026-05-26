@@ -1,0 +1,25 @@
+Functional Requirements (FR)
+
+Consent -Capture	What consent types exist?
+Authentication-	How is identity validated?
+Consent Validation	-What GDPR rules apply?
+Event Publishing-	What triggers events?
+Downstream Sync	-Which systems consume updates?
+Error Handling	-Retry/DLQ requirements?
+Audit	-What logs must be retained?
+Regional Rules	-Country-specific logic?
+Monitoring-	Alerting and dashboards?
+
+Non-Functional Requirements (NFR)
+
+NFR -Category	Example Requirements
+Performance	Consent sync within 5 seconds
+Availability	-99.9% uptime
+Scalability	-Support high traffic volumes
+Security	-OAuth2 authentication
+Encryption	-TLS 1.2 enabled
+Auditability	Maintain audit logs for 7 years
+Reliability	Retry failed events automatically
+Monitoring-	Real-time alerting enabled
+Compliance-	GDPR-compliant data handling
+Maintainability	-Centralized logging and tracing
